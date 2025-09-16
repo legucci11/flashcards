@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <label class="button" id="label" for="upload">Upload deck</label>
+    <input id="upload" type="file" accept=".json" style="visibility: hidden; width: 0px">
+    <button class="button" id="download" onclick="download()">Download deck</button>
+    <button class="button" id="delete" onclick="deleteDeck()">Delete deck</button>
+    <button class="button" id="add" onclick="addCard()">Add card</button>
+    <button class="button" id="see" onclick="seeDeck()">See deck</button>
+    <label class="button" for="hideInput">Hide input box</label>
+    <input id="hideInput" type="checkbox" value="hideInput" style="visibility: hidden; width: 0px; margin: 0px;">
+    <label class="button" for="darkMode">Dark mode</label>
+    <input id="darkMode" type="checkbox" value="darkMode" style="visibility: hidden; width: 0px; margin: 0px;">
+    <pre id="correct"></pre>
+    <pre id="solution"></pre>
+    <div id="card">
+      <pre id="cardText"></pre>
+      <input id="entry" type="text">
+    </div>
+    <pre id="stats">Current streak: 0</pre>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

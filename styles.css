@@ -1,0 +1,93 @@
+/******************************************** Light mode ********************************************/
+
+body {
+  background-color: lightgrey;
+}
+
+.button {
+  font: 10px arial;
+  border: solid transparent;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px grey;
+  padding: 2px 3px;
+  margin: 0px;
+}
+
+#correct {
+  font-size: 25px;
+  text-align: center;
+}
+
+#solution {
+  font-size: 15px;
+  color: grey;
+  text-align: center;
+}
+
+#card {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 670px;
+  height: 400px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 2px grey;
+  text-align: center;
+  align-content: center;
+}
+
+#cardText {
+  color: black;
+  font-size: 25px;
+  white-space: pre-line;
+}
+
+#entry {
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+  align-content: center;
+}
+
+#stats {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200px);
+  text-align: center;
+  align-content: center;
+}
+
+
+
+
+/******************************************** Dark Mode ********************************************/
+
+body.darkMode {
+  background-color: black;
+}
+
+.darkMode .button {
+  background-color: #474747;
+  color: white;
+}
+
+.darkMode #hideInput {
+  color: white;
+}
+
+.darkMode #card {
+  background-color: #474747;
+  box-shadow: 0px 0px 5px 2px grey;
+}
+
+.darkMode #cardText {
+  color: white;
+}
+
+.darkMode #stats {
+  color: white;
+}
